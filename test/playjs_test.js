@@ -1,4 +1,4 @@
-import UnitTest from './playjs.js'
+import UnitTest from '../src/playjs.js'
 
 function testAssertTrue(u = UnitTest()) {
   u.assertTrue(true)
