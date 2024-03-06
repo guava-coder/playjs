@@ -1,12 +1,9 @@
-import UnitTest from '../src/playjs.js'
+import PlayJs from '../src/playjs.js'
 
-function testAssertTrue(u = UnitTest()) {
+((u)=> {
   u.assertTrue(true)
-}
+})(PlayJs('testAssertTrue'));
 
-function testAssertNotTrue(u = UnitTest()) {
+((u)=> {
   u.assertNotTrue(false)
-}
-
-testAssertTrue(UnitTest('testAssertTrue'))
-testAssertNotTrue(UnitTest('testAssertNotTrue'))
+})(PlayJs('testAssertNotTrue'));
